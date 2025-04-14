@@ -34,6 +34,13 @@ body {
     padding: 20px 40px;
     margin: 20px 0;
 }
+a {
+    text-decoration: none;
+}
+
+ul {
+    list-style-type: none;
+}
 
 /* header */
 header {
