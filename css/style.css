@@ -34,3 +34,12 @@ body {
     padding: 20px 40px;
     margin: 20px 0;
 }
+
+/* header */
+header {
+    position: sticky;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+    
+}
