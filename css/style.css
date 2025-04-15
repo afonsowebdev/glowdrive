@@ -33,6 +33,9 @@
     --position-nav-items: relative;
 
 
+    /* Geral  */
+    --font-size-p: 18px;
+
 }
 
 /* Configurações Gerais */
@@ -154,5 +157,32 @@ span {
     text-align: center;
     margin: auto;
     padding: 2rem;
+}
+
+.hero-content .hero-title {
+    font-size: 4rem;
+    font-weight: 700;
+    text-shadow: 0 3px 5px rgba(0, 0, 0, 0.5);
+}
+
+.hero-content .hero-description {
+    font-size: var(--font-size-p);
+    margin: 20px 0;
+}
+
+.hero-content .hero-button {
+    background-color: var(--color-span-body);
+    color: var(--color-body);
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    margin: 20px 0;
+    font-weight: 600;
+}
+
+.hero-content .hero-button:hover {
+    background-color: var(--color-span-body);
+    color: var(--color-body);
+    border: none;
 }
 
