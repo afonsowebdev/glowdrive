@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!-- <!DOCTYPE html>
 <html lang="en">
 
 <head>
@@ -107,4 +107,145 @@
 </body>
 
 
+</html> -->
+
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Exemplo de Animações com Keyframes</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #f5f5f5;
+    }
+
+    .hero-section {
+      height: 100vh;
+      background-image: url('https://images.unsplash.com/photo-1603079848285-7f728d5b3b94');
+      background-size: cover;
+      background-position: center;
+      color: white;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      padding: 20px;
+      animation: bgFade 2s ease-in forwards;
+    }
+
+    h1 {
+      font-size: 3rem;
+      margin-bottom: 20px;
+      animation: fadeIn 1.5s ease-out forwards;
+    }
+
+    p {
+      font-size: 1.2rem;
+      margin-bottom: 30px;
+      max-width: 600px;
+      animation: slideInLeft 1.5s ease-out forwards;
+    }
+
+    button {
+      background-color: #1e90ff;
+      color: white;
+      border: none;
+      padding: 15px 30px;
+      font-size: 1rem;
+      border-radius: 8px;
+      cursor: pointer;
+      animation: bounceIn 1s ease-out;
+      transition: background-color 0.3s ease;
+    }
+
+    button:hover {
+      background-color: #0d6efd;
+    }
+
+    .car-img {
+      margin-top: 50px;
+      width: 200px;
+      border-radius: 10px;
+      animation: pulse 2s infinite ease-in-out;
+    }
+
+    /* ========== KEYFRAMES ========== */
+
+    @keyframes fadeIn {
+      from {
+        opacity: 0;
+        transform: translateY(20px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    @keyframes slideInLeft {
+      from {
+        opacity: 0;
+        transform: translateX(-50px);
+      }
+      to {
+        opacity: 1;
+        transform: translateX(0);
+      }
+    }
+
+    @keyframes bounceIn {
+      0% {
+        transform: scale(0.9);
+        opacity: 0;
+      }
+      60% {
+        transform: scale(1.05);
+        opacity: 1;
+      }
+      100% {
+        transform: scale(1);
+      }
+    }
+
+    @keyframes pulse {
+      0% {
+        transform: scale(1);
+      }
+      50% {
+        transform: scale(1.05);
+      }
+      100% {
+        transform: scale(1);
+      }
+    }
+
+    @keyframes bgFade {
+      from {
+        filter: brightness(0.5);
+      }
+      to {
+        filter: brightness(1);
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <section class="hero-section">
+    <h1>Bem-vindo à CleanDrive</h1>
+    <p>Lavagem automóvel premium ao seu domicílio — cuidamos do seu carro com excelência e atenção aos detalhes.</p>
+    <button>Agendar Agora</button>
+    <img src="https://images.unsplash.com/photo-1549924231-f129b911e442" alt="Carro limpo" class="car-img">
+  </section>
+
+</body>
 </html>

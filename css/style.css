@@ -30,6 +30,7 @@
     --text-shadow-nav-items: 0 4px 6px rgba(0, 0, 0, 0.5);
     --color--nav-items: #ffffff;
     --cursor-nav-items: pointer;
+    --position-nav-items: relative;
 
 
 }
@@ -61,6 +62,7 @@ body {
     padding: 20px 40px;
     margin: 20px 0;
 }
+
 a {
     text-decoration: none;
 }
@@ -80,7 +82,7 @@ span {
 
 /* header */
 .hero-header {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0,0,0, 0.3)), var(--background-image);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.5)), var(--background-image);
     background-position: var(--background-position);
     background-size: var(--background-size);
     background-repeat: var(--background-repeat);
@@ -111,16 +113,46 @@ span {
     text-shadow: var(--text-shadow-logo);
 }
 
-.hero-header .nav-bar .nav-list .nav-items a{
+.nav-list .nav-items a {
     font-size: var(--font-size-nav-items);
     font-weight: var(--font-weight-nav-items);
     text-shadow: var(--text-shadow-nav-items);
     color: var(--color--nav-items);
     cursor: var(--cursor-nav-items);
+    position: var(--position-nav-items);
 }
 
+.nav-list .nav-items a::after {
+    content: " ";
+    position: absolute;
+    left: 0;
+    bottom: -2px;
+    width: 100%;
+    height: 2px;
+    background-color: #3498db;
+    transform: scale(0);
+    transform-origin: left;
+    transition: transform 0.3s ease;
+}
+
+.nav-list .nav-items a:hover {
+    color: #ffffff;
+}
+
+.nav-list .nav-items a:hover::after {
+    transform: scale(1);
+}
+
+.redes-sociais a i{
+    color: var(--color-body);
+    font-size: 1.4rem;
+    margin: 0 10px;
+}
+
+/* Hero-Content */
 .hero-content {
     text-align: center;
     margin: auto;
     padding: 2rem;
-  }
+}
+
