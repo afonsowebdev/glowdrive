@@ -65,4 +65,152 @@
   .cta-button:hover {
     background-color: #e6c200;
   }
+
+  .sobre-nos {
+    background-color: #f8f9fa;
+    padding: 80px 20px;
+    color: #333;
+  }
+  
+  .sobre-nos .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    text-align: center;
+  }
+  
+  .sobre-nos h2 {
+    font-size: 2.5rem;
+    margin-bottom: 1.5rem;
+    color: #0d1b2a;
+  }
+  
+  .sobre-nos .intro {
+    font-size: 1.2rem;
+    max-width: 800px;
+    margin: 0 auto 3rem auto;
+    line-height: 1.6;
+  }
+  
+  .valores {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2rem;
+    margin-bottom: 4rem;
+  }
+  
+  .valor-item {
+    background-color: #fff;
+    padding: 1.5rem;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+    max-width: 300px;
+    text-align: center;
+  }
+  
+  .valor-item img {
+    width: 60px;
+    margin-bottom: 1rem;
+  }
+  
+  .valor-item h3 {
+    font-size: 1.3rem;
+    color: #0d1b2a;
+    margin-bottom: 0.5rem;
+  }
+  
+  .fundadores {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+    text-align: left;
+  }
+  
+  .fundadores .foto-fundador {
+    width: 180px;
+    height: 180px;
+    border-radius: 50%;
+    object-fit: cover;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  }
+  
+  .texto-fundador {
+    max-width: 700px;
+    font-size: 1.1rem;
+    line-height: 1.6;
+  }
+  
+  .texto-fundador h3 {
+    font-size: 1.4rem;
+    color: #0d1b2a;
+    margin-bottom: 1rem;
+  }
+  
+  @media (min-width: 768px) {
+    .fundadores {
+      flex-direction: row;
+      justify-content: center;
+      align-items: center;
+      text-align: left;
+    }
+  
+    .texto-fundador {
+      margin-left: 2rem;
+    }
+  }
+
+  
+  .servicos {
+    padding: 80px 20px;
+    background-color: #ffffff;
+    text-align: center;
+  }
+  
+  .servicos h2 {
+    font-size: 2.5rem;
+    color: #0d1b2a;
+    margin-bottom: 1rem;
+  }
+  
+  .servicos .intro {
+    max-width: 700px;
+    margin: 0 auto 3rem auto;
+    font-size: 1.2rem;
+    color: #555;
+  }
+  
+  .cards-servicos {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    justify-content: center;
+  }
+  
+  .card-servico {
+    background-color: #f8f9fa;
+    border-radius: 12px;
+    padding: 1.5rem;
+    max-width: 300px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+    text-align: center;
+  }
+  
+  .card-servico img {
+    width: 100%;
+    border-radius: 8px;
+    margin-bottom: 1rem;
+  }
+  
+  .card-servico h3 {
+    font-size: 1.3rem;
+    color: #0d1b2a;
+    margin-bottom: 0.5rem;
+  }
+  
+  .card-servico p {
+    font-size: 1rem;
+    color: #666;
+  }
+  
   
