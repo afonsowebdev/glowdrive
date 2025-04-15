@@ -1,251 +1,111 @@
-<!-- <!DOCTYPE html>
+
+
+<!DOCTYPE html>
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <title>Document</title>
-</head>
-
-<body>
-    <header class="hero-header">
-        <nav>
-            <div class="logo">
-                <a href="#inicio"><strong>LuxCar Wash</strong></a>
-            </div>
-            <ul class="menu">
-                <li><a href="#inicio">Início</a></li>
-                <li><a href="#sobre">Sobre Nós</a></li>
-                <li><a href="#servicos">Serviços</a></li>
-                <li><a href="#como-funciona">Como Funciona</a></li>
-                <li><a href="#depoimentos">Depoimentos</a></li>
-                <li><a href="#galeria">Galeria</a></li>
-                <li><a href="#precos">Preços</a></li>
-                <li><a href="#agendamento">Agendamento</a></li>
-                <li><a href="#contato">Contato</a></li>
-            </ul>
-        </nav>
-
-        <div class="hero-content">
-            <h1>Lavagem de Carros Premium ao Domicílio</h1>
-            <p>Qualidade, comodidade e brilho sem sair de casa.</p>
-            <a href="#agendamento" class="cta-button">Agendar Agora</a>
-        </div>
-    </header>
-
-    <main>
-        <section id="sobre" class="sobre-nos">
-            <div class="container">
-                <h2>Sobre Nós</h2>
-
-                <p class="intro">
-                    A <strong>LuxCar Wash</strong> nasceu com o objetivo de transformar a maneira como você cuida do seu
-                    carro. Levamos até à sua porta um serviço de lavagem automóvel premium, ecológico e com atenção aos
-                    mínimos detalhes.
-                </p>
-
-                <div class="valores">
-                    <div class="valor-item">
-                        <img src="icone-qualidade.svg" alt="Ícone Qualidade">
-                        <h3>Qualidade Garantida</h3>
-                        <p>Produtos de excelência e técnicas profissionais para resultados impecáveis.</p>
-                    </div>
-                    <div class="valor-item">
-                        <img src="icone-ecologico.svg" alt="Ícone Ecológico">
-                        <h3>Compromisso Ecológico</h3>
-                        <p>Serviço sustentável com economia de água e produtos biodegradáveis.</p>
-                    </div>
-                    <div class="valor-item">
-                        <img src="icone-conveniencia.svg" alt="Ícone Conveniência">
-                        <h3>Conveniência Total</h3>
-                        <p>Lavamos o seu carro onde quer que esteja, seja em casa ou no trabalho.</p>
-                    </div>
-                </div>
-
-                <div class="fundadores">
-                    <img src="fundador.jpg" alt="Foto do Fundador" class="foto-fundador">
-                    <div class="texto-fundador">
-                        <h3>Mensagem do Fundador</h3>
-                        <p>"A nossa missão é entregar brilho e praticidade com um serviço que respeita o seu tempo e
-                            valoriza o seu automóvel. LuxCar Wash é mais que uma lavagem – é cuidado com excelência."
-                        </p>
-                        <p><em>– João Silva, Fundador</em></p>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <section id="servicos" class="servicos">
-            <div class="container">
-                <h2>Serviços</h2>
-                <p class="intro">Escolha o serviço ideal para o seu carro. Qualidade, conveniência e cuidado em cada
-                    detalhe.</p>
-
-                <div class="cards-servicos">
-                    <div class="card-servico">
-                        <img src="lavagem-express.jpg" alt="Lavagem Rápida">
-                        <h3>Lavagem Rápida</h3>
-                        <p>Exterior com cera e acabamento em poucos minutos.</p>
-                    </div>
-                    <div class="card-servico">
-                        <img src="lavagem-completa.jpg" alt="Lavagem Completa">
-                        <h3>Lavagem Completa</h3>
-                        <p>Interior e exterior com atenção a todos os detalhes.</p>
-                    </div>
-                    <div class="card-servico">
-                        <img src="lavagem-premium.jpg" alt="Lavagem Premium">
-                        <h3>Lavagem Premium</h3>
-                        <p>Serviço detalhado com proteção e brilho duradouro.</p>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-
-    </main>
-</body>
-
-
-</html> -->
-
-<!DOCTYPE html>
-<html lang="pt">
-<head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Exemplo de Animações com Keyframes</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+
+  <title>Document</title>
   <style>
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-    }
-
-    body {
-      font-family: 'Segoe UI', sans-serif;
-      background-color: #f5f5f5;
-    }
-
-    .hero-section {
-      height: 100vh;
-      background-image: url('https://images.unsplash.com/photo-1603079848285-7f728d5b3b94');
-      background-size: cover;
-      background-position: center;
-      color: white;
+    .navbar {
       display: flex;
-      flex-direction: column;
-      justify-content: center;
+      justify-content: space-between;
       align-items: center;
-      text-align: center;
-      padding: 20px;
-      animation: bgFade 2s ease-in forwards;
+      padding: 15px 20px;
+      background: #333;
     }
 
-    h1 {
-      font-size: 3rem;
-      margin-bottom: 20px;
-      animation: fadeIn 1.5s ease-out forwards;
+    .nav-links {
+      list-style: none;
+      display: flex;
     }
 
-    p {
-      font-size: 1.2rem;
-      margin-bottom: 30px;
-      max-width: 600px;
-      animation: slideInLeft 1.5s ease-out forwards;
+    .nav-links li {
+      margin-left: 20px;
     }
 
-    button {
-      background-color: #1e90ff;
-      color: white;
-      border: none;
-      padding: 15px 30px;
-      font-size: 1rem;
-      border-radius: 8px;
+    .nav-links a {
+      color: #fff;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    .menu-toggle {
+      display: none;
+      flex-direction: column;
       cursor: pointer;
-      animation: bounceIn 1s ease-out;
-      transition: background-color 0.3s ease;
     }
 
-    button:hover {
-      background-color: #0d6efd;
+    .menu-toggle span {
+      background: #fff;
+      height: 3px;
+      width: 25px;
+      margin: 4px 0;
+      border-radius: 5px;
     }
 
-    .car-img {
-      margin-top: 50px;
-      width: 200px;
-      border-radius: 10px;
-      animation: pulse 2s infinite ease-in-out;
-    }
+    /* Responsivo */
+    @media (max-width: 768px) {
+      .menu-toggle {
+        display: flex;
+      }
 
-    /* ========== KEYFRAMES ========== */
+      .nav-links {
+        position: absolute;
+        top: 70px;
+        right: 0;
+        background: #333;
+        width: 100%;
+        flex-direction: column;
+        align-items: center;
+        display: none;
+      }
 
-    @keyframes fadeIn {
-      from {
-        opacity: 0;
-        transform: translateY(20px);
+      .nav-links.active {
+        display: flex;
       }
-      to {
-        opacity: 1;
-        transform: translateY(0);
-      }
-    }
 
-    @keyframes slideInLeft {
-      from {
-        opacity: 0;
-        transform: translateX(-50px);
-      }
-      to {
-        opacity: 1;
-        transform: translateX(0);
-      }
-    }
-
-    @keyframes bounceIn {
-      0% {
-        transform: scale(0.9);
-        opacity: 0;
-      }
-      60% {
-        transform: scale(1.05);
-        opacity: 1;
-      }
-      100% {
-        transform: scale(1);
-      }
-    }
-
-    @keyframes pulse {
-      0% {
-        transform: scale(1);
-      }
-      50% {
-        transform: scale(1.05);
-      }
-      100% {
-        transform: scale(1);
-      }
-    }
-
-    @keyframes bgFade {
-      from {
-        filter: brightness(0.5);
-      }
-      to {
-        filter: brightness(1);
+      .nav-links li {
+        margin: 15px 0;
       }
     }
   </style>
 </head>
-<body>
 
-  <section class="hero-section">
-    <h1>Bem-vindo à CleanDrive</h1>
-    <p>Lavagem automóvel premium ao seu domicílio — cuidamos do seu carro com excelência e atenção aos detalhes.</p>
-    <button>Agendar Agora</button>
-    <img src="https://images.unsplash.com/photo-1549924231-f129b911e442" alt="Carro limpo" class="car-img">
-  </section>
+<body>
+  <header>
+    <nav class="navbar">
+      <div class="logo">
+        <img src="images/logo.png" alt="Logo GlowDrive">
+      </div>
+      <div class="menu-toggle" id="mobile-menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+      <ul class="nav-links">
+        <li><a href="#services">Serviços</a></li>
+        <li><a href="#about">Sobre</a></li>
+        <li><a href="#contact">Contato</a></li>
+      </ul>
+    </nav>
+  </header>
+
+
+
+  <script>
+    const menuToggle = document.getElementById('mobile-menu');
+    const navLinks = document.querySelector('.nav-links');
+
+    menuToggle.addEventListener('click', () => {
+      navLinks.classList.toggle('active');
+    });
+  </script>
 
 </body>
+
 </html>

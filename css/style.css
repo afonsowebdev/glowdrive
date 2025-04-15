@@ -38,6 +38,12 @@
 
 }
 
+/* Fonte */
+@font-face {
+    font-family: 'anteroly';
+    src: url(/font/anteroly.ttf);
+}
+
 /* Configurações Gerais */
 * {
     margin: 0;
@@ -116,6 +122,13 @@ span {
     text-shadow: var(--text-shadow-logo);
 }
 
+.hero-header .nav-bar .menu-toggle {
+    display: none;
+    cursor: pointer;
+    font-size: 28px;
+    color: white;
+  }
+
 .nav-list .nav-items a {
     font-size: var(--font-size-nav-items);
     font-weight: var(--font-weight-nav-items);
@@ -156,7 +169,7 @@ span {
 .hero-content {
     text-align: center;
     margin: auto;
-    padding: 2rem;
+    padding: 1rem;
 }
 
 .hero-content .hero-title {
@@ -167,7 +180,7 @@ span {
 
 .hero-content .hero-description {
     font-size: var(--font-size-p);
-    margin: 20px 0;
+    /* margin: 20px 0; */
 }
 
 .hero-content .hero-button {
@@ -176,7 +189,7 @@ span {
     border: none;
     border-radius: 5px;
     padding: 10px 20px;
-    margin: 20px 0;
+    /* margin: 20px 0; */
     font-weight: 600;
 }
 
@@ -185,4 +198,3 @@ span {
     color: var(--color-body);
     border: none;
 }
-
