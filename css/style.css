@@ -309,21 +309,25 @@ span {
 
 /* Galeria */
 
-.galeria {
+.galery {
     padding: 60px 20px;
-    background-color: #fff;
+    background-color: var(--color-body);
     text-align: center;
+    border-radius: 15px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.5);
 }
 
-.galeria h2 {
+.galery .galery-subtitle {
     font-size: 2.3rem;
     margin-bottom: 10px;
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
 }
 
-.galeria-subtitulo {
+.galery .galery-paragraph {
     font-size: 1rem;
     color: #555;
     margin-bottom: 40px;
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
 .galeria-grid {
