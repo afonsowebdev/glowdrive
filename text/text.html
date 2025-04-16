@@ -5,6 +5,9 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <!-- Swiper CSS -->
+  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+
 
 
   <title>Document</title>
@@ -100,6 +103,46 @@
       color: #666;
     }
 
+    .carrossel {
+      padding: 60px 20px;
+      background-color: #fdfdfd;
+      text-align: center;
+    }
+
+    .carrossel h2 {
+      font-size: 2.2rem;
+      margin-bottom: 10px;
+    }
+
+    .galeria-subtitulo {
+      font-size: 1rem;
+      color: #555;
+      margin-bottom: 40px;
+    }
+
+    .swiper {
+      width: 100%;
+      max-width: 1000px;
+      height: 300px;
+      margin: 0 auto;
+    }
+
+    .swiper-slide {
+      text-align: center;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .swiper-slide img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      border-radius: 15px;
+    }
+
+
+
 
     /* Responsivo */
     @media (max-width: 768px) {
@@ -148,7 +191,31 @@
     </nav>
   </header>
 
-  
+  <section class="carrossel" id="galeria">
+    <h2>Galeria de Resultados</h2>
+    <p class="galeria-subtitulo">Veja alguns carros que passaram pela GlowDrive</p>
+
+    <div class="swiper mySwiper">
+      <div class="swiper-wrapper">
+        <!-- Slides -->
+        <div class="swiper-slide"><img src="2149172897.jpg" alt="Carro 1" /></div>
+        <div class="swiper-slide"><img src="/image/hero-header-background.jpg" alt="Carro 2" /></div>
+        <div class="swiper-slide"><img src="2149172897.jpg" alt="Carro 3" /></div>
+        <div class="swiper-slide"><img src="2149172897.jpg" alt="Carro 4" /></div>
+        <div class="swiper-slide"><img src="2149172897.jpg" alt="Carro 5" /></div>
+      </div>
+
+      <!-- Setas de navegação -->
+      <div class="swiper-button-next"></div>
+      <div class="swiper-button-prev"></div>
+
+      <!-- Paginação -->
+      <div class="swiper-pagination"></div>
+    </div>
+  </section>
+
+
+
 
 
 
@@ -160,6 +227,28 @@
     menuToggle.addEventListener('click', () => {
       navLinks.classList.toggle('active');
     });
+    const swiper = new Swiper(".mySwiper", {
+      loop: true,
+      autoplay: {
+        delay: 3000,
+        disableOnInteraction: false,
+      },
+      pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+      },
+      navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+      },
+      breakpoints: {
+        768: { slidesPerView: 2, spaceBetween: 20 },
+        1024: { slidesPerView: 3, spaceBetween: 30 },
+        0: { slidesPerView: 1 }
+      }
+    });
+
+
   </script>
 
 </body>

@@ -125,7 +125,7 @@
                         <h3>Lavagem Premium</h3>
                         <p>Limpeza detalhada com cera e aromatizante. Brilho garantido!</p>
                     </div>
-                    
+
                     <div class="service-card">
                         <i class="fas fa-soap"></i>
                         <h3>Higienização Interna</h3>
@@ -145,6 +145,99 @@
                     </div>
                 </div>
             </section>
+
+            <section class="galeria" id="galeria">
+                <h2>Galeria de Resultados</h2>
+                <p class="galeria-subtitulo">Confira alguns dos nossos serviços realizados</p>
+
+                <div class="galeria-grid">
+                    <img src="img/antes-depois1.jpg" alt="Antes e Depois 1">
+                    <img src="img/lavagem-premium.jpg" alt="Lavagem Premium">
+                    <img src="img/higienizacao.jpg" alt="Higienização Interna">
+                    <img src="img/enceramento.jpg" alt="Enceramento e Cristalização">
+                    <img src="img/equipe-atuando.jpg" alt="Equipe Atuando">
+                    <img src="img/carro-finalizado.jpg" alt="Carro Finalizado">
+                </div>
+            </section>
+
+            <section class="precos" id="precos">
+                <h2>Nossos Pacotes</h2>
+                <p class="precos-subtitulo">Escolha o serviço que mais combina com você</p>
+
+                <div class="precos-container">
+                    <!-- Pacote Básico -->
+                    <div class="plano">
+                        <h3>Básico</h3>
+                        <p class="preco">€19,90</p>
+                        <ul>
+                            <li>Lavagem externa</li>
+                            <li>Secagem manual</li>
+                            <li>Limpeza de vidros</li>
+                        </ul>
+                        <a href="#agendamento" class="botao-plano">Agendar</a>
+                    </div>
+
+                    <!-- Pacote Completo -->
+                    <div class="plano destaque">
+                        <h3>Completo</h3>
+                        <p class="preco">€34,90</p>
+                        <ul>
+                            <li>Lavagem externa e interna</li>
+                            <li>Higienização dos bancos</li>
+                            <li>Aromatizante premium</li>
+                        </ul>
+                        <a href="#agendamento" class="botao-plano">Agendar</a>
+                    </div>
+
+                    <!-- Pacote Premium -->
+                    <div class="plano">
+                        <h3>Premium</h3>
+                        <p class="preco">€49,90</p>
+                        <ul>
+                            <li>Lavagem completa + Motor</li>
+                            <li>Enceramento e proteção UV</li>
+                            <li>Brilho especial nas rodas</li>
+                        </ul>
+                        <a href="#agendamento" class="botao-plano">Agendar</a>
+                    </div>
+                </div>
+            </section>
+
+
+            <section class="agendamento" id="agendamento">
+                <h2>Agende sua Lavagem</h2>
+                <p class="agendamento-subtitulo">Escolha o melhor horário e cuidaremos do resto</p>
+
+                <form class="form-agendamento">
+                    <input type="text" placeholder="Seu nome" name="nome" required />
+                    <input type="tel" placeholder="Telefone para contato" name="telefone" required />
+                    <input type="date" name="data" required />
+                    <input type="time" name="hora" required />
+
+                    <select name="servico" required>
+                        <option value="">Selecione o serviço</option>
+                        <option value="basico">Básico - €19,90</option>
+                        <option value="completo">Completo - €34,90</option>
+                        <option value="premium">Premium - €49,90</option>
+                    </select>
+
+                    <button type="submit">Agendar agora</button>
+                </form>
+            </section>
+
+            <section class="contato" id="contato">
+                <h2>Entre em Contato</h2>
+                <p class="contato-subtitulo">Tem alguma dúvida? Fale conosco!</p>
+
+                <form class="form-contato">
+                    <input type="text" name="nome" placeholder="Seu nome" required />
+                    <input type="email" name="email" placeholder="Seu e-mail" required />
+                    <textarea name="mensagem" placeholder="Escreva sua mensagem..." required></textarea>
+                    <button type="submit">Enviar mensagem</button>
+                </form>
+            </section>
+
+
         </div>
     </main>
 

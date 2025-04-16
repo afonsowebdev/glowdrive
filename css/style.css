@@ -218,7 +218,7 @@ span {
     background-color: #fff;
     padding: 1.5rem;
     border-radius: 12px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+    box-shadow: 0 1px 6px rgba(0, 0, 0, 0.5);
     max-width: 400px;
     text-align: center;
 }
@@ -283,25 +283,256 @@ span {
     border-radius: 15px;
     box-shadow: 0 1px 6px rgba(0, 0, 0, 0.5);
     transition: transform 0.3s ease;
+    cursor: pointer;
 }
 
-.service-card:hover {
+.service .service-card:hover {
     transform: translateY(-5px);
 }
 
-.service-card i {
+.service .service-card i {
     font-size: 2.5rem;
     color: #2196f3;
     margin-bottom: 15px;
 }
 
-.service-card h3 {
+.service .service-card h3 {
     font-size: 1.2rem;
     margin-bottom: 10px;
     color: #333;
 }
 
-.service-card p {
+.service .service-card p {
     font-size: 0.95rem;
     color: #666;
+}
+
+/* Galeria */
+
+.galeria {
+    padding: 60px 20px;
+    background-color: #fff;
+    text-align: center;
+}
+
+.galeria h2 {
+    font-size: 2.3rem;
+    margin-bottom: 10px;
+}
+
+.galeria-subtitulo {
+    font-size: 1rem;
+    color: #555;
+    margin-bottom: 40px;
+}
+
+.galeria-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.galeria-grid img {
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+    border-radius: 12px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.galeria-grid img:hover {
+    transform: scale(1.03);
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+}
+
+
+/* Preço */
+
+.precos {
+    padding: 60px 20px;
+    background-color: #f7f7f7;
+    text-align: center;
+}
+
+.precos h2 {
+    font-size: 2.4rem;
+    margin-bottom: 10px;
+}
+
+.precos-subtitulo {
+    font-size: 1rem;
+    color: #666;
+    margin-bottom: 40px;
+}
+
+.precos-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 30px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.plano {
+    background-color: #fff;
+    border-radius: 15px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+    padding: 30px 20px;
+    transition: transform 0.3s ease;
+}
+
+.plano:hover {
+    transform: translateY(-5px);
+}
+
+.plano h3 {
+    font-size: 1.4rem;
+    margin-bottom: 10px;
+    color: #222;
+}
+
+.preco {
+    font-size: 2rem;
+    color: #0077ff;
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+
+.plano ul {
+    list-style: none;
+    padding: 0;
+    margin-bottom: 20px;
+}
+
+.plano ul li {
+    margin-bottom: 10px;
+    color: #555;
+}
+
+.botao-plano {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #0077ff;
+    color: white;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: 600;
+    transition: background-color 0.3s ease;
+}
+
+.botao-plano:hover {
+    background-color: #005fd6;
+}
+
+.destaque {
+    border: 2px solid #0077ff;
+}
+
+/* Agentamentos */
+
+.agendamento {
+    padding: 60px 20px;
+    background-color: #fff;
+    text-align: center;
+}
+
+.agendamento h2 {
+    font-size: 2.2rem;
+    margin-bottom: 10px;
+}
+
+.agendamento-subtitulo {
+    font-size: 1rem;
+    color: #666;
+    margin-bottom: 30px;
+}
+
+.form-agendamento {
+    max-width: 500px;
+    margin: 0 auto;
+    display: grid;
+    gap: 15px;
+}
+
+.form-agendamento input,
+.form-agendamento select {
+    padding: 12px;
+    font-size: 1rem;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    width: 100%;
+}
+
+.form-agendamento button {
+    padding: 12px;
+    font-size: 1rem;
+    background-color: #0077ff;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.form-agendamento button:hover {
+    background-color: #005fd6;
+}
+
+/* Contacto */
+
+.contato {
+    padding: 60px 20px;
+    background-color: #f7f7f7;
+    text-align: center;
+}
+
+.contato h2 {
+    font-size: 2.2rem;
+    margin-bottom: 10px;
+}
+
+.contato-subtitulo {
+    font-size: 1rem;
+    color: #666;
+    margin-bottom: 30px;
+}
+
+.form-contato {
+    max-width: 600px;
+    margin: 0 auto;
+    display: grid;
+    gap: 15px;
+}
+
+.form-contato input,
+.form-contato textarea {
+    padding: 12px;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    width: 100%;
+}
+
+.form-contato textarea {
+    min-height: 150px;
+    resize: vertical;
+}
+
+.form-contato button {
+    padding: 12px;
+    font-size: 1rem;
+    background-color: #0077ff;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.form-contato button:hover {
+    background-color: #005fd6;
 }
