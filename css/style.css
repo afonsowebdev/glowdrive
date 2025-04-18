@@ -177,7 +177,6 @@ span {
 .hero-content .hero-title {
     font-size: 3.5rem;
     font-weight: 700;
-    text-shadow: 0 4px 6px rgba(0, 0, 0, 0.5);
 }
 
 .hero-content .hero-description {
@@ -194,7 +193,6 @@ span {
     text-align: center;
     font-size: 2rem;
     margin: 10px 20px;
-    text-shadow: 0 4px 6px rgba(0, 0, 0, 0.5);
 }
 
 .about .about-description {
@@ -235,12 +233,10 @@ span {
 
 .about-fundadores .about-subtitle {
     font-size: 1.5rem;
-    text-shadow: 0 1px 3px rgba(0, 0, 0, 0.6);
 }
 
 .about-fundadores .about-paragraph {
     text-align: justify;
-    text-shadow: 0 2px 3px rgba(0, 0, 0, 0.2);
 }
 
 /* service */
@@ -254,12 +250,10 @@ span {
 .service .service-subtile {
     font-size: 2rem;
     text-align: center;
-    text-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
 }
 
 .service .service-subtitle {
     text-align: center;
-    text-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
     font-size: var(--font-size-p);
     margin: 10px;
 }
@@ -313,14 +307,12 @@ span {
 .galery .galery-subtitle {
     font-size: 2.3rem;
     margin-bottom: 10px;
-    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
 }
 
 .galery .galery-paragraph {
     font-size: 1rem;
     color: #555;
     margin-bottom: 40px;
-    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
 .galery-grid {
@@ -355,13 +347,11 @@ span {
 .precos .precos-title {
     font-size: 2.4rem;
     margin-bottom: 10px;
-    text-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
 }
 
 .precos .precos-subtitulo {
     font-size: 1rem;
     color: #666;
-    text-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
     margin-bottom: 40px;
 }
 
@@ -389,7 +379,6 @@ span {
     font-size: 1.4rem;
     margin-bottom: 10px;
     color: #222;
-    text-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
 }
 
 .preco {
@@ -440,7 +429,6 @@ span {
 .agendamento .agendamento-subtitle {
     font-size: 2.2rem;
     margin-bottom: 10px;
-    text-shadow: 0 1px 6px rgba(0, 0, 0, 0.09);
 }
 
 .agendamento-paragraph {
@@ -527,7 +515,7 @@ span {
 .form-contato button {
     padding: 12px;
     font-size: 1rem;
-    background-color: #0077ff;
+    background-color: var(--color-span-body);
     color: white;
     border: none;
     border-radius: 8px;
