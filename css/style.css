@@ -188,8 +188,6 @@ span {
 .about {
     width: 100%;
     height: auto;
-    border-radius: 20px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
 }
 
 .about .about-title {
@@ -207,10 +205,8 @@ span {
 }
 
 .about .about-valores {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin: 10px auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
     gap: 30px;
 }
 
@@ -250,7 +246,6 @@ span {
 /* service */
 
 .service {
-    background-color: var(--color-body);
     width: 100%;
     height: auto;
     margin: auto;
@@ -311,10 +306,8 @@ span {
 
 .galery {
     padding: 60px 20px;
-    background-color: var(--color-body);
+    background-color: #fff;
     text-align: center;
-    border-radius: 15px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.5);
 }
 
 .galery .galery-subtitle {
@@ -330,7 +323,7 @@ span {
     text-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
-.galeria-grid {
+.galery-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
     gap: 20px;
@@ -338,7 +331,7 @@ span {
     margin: 0 auto;
 }
 
-.galeria-grid img {
+.galery-grid img {
     width: 100%;
     height: 220px;
     object-fit: cover;
@@ -346,9 +339,9 @@ span {
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-.galeria-grid img:hover {
+.galery-grid img:hover {
     transform: scale(1.03);
-    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.6);
 }
 
 
@@ -356,18 +349,19 @@ span {
 
 .precos {
     padding: 60px 20px;
-    background-color: #f7f7f7;
     text-align: center;
 }
 
-.precos h2 {
+.precos .precos-title {
     font-size: 2.4rem;
     margin-bottom: 10px;
+    text-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
 }
 
-.precos-subtitulo {
+.precos .precos-subtitulo {
     font-size: 1rem;
     color: #666;
+    text-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
     margin-bottom: 40px;
 }
 
@@ -382,7 +376,7 @@ span {
 .plano {
     background-color: #fff;
     border-radius: 15px;
-    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.09);
     padding: 30px 20px;
     transition: transform 0.3s ease;
 }
@@ -395,11 +389,12 @@ span {
     font-size: 1.4rem;
     margin-bottom: 10px;
     color: #222;
+    text-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
 }
 
 .preco {
-    font-size: 2rem;
-    color: #0077ff;
+    font-size: 2.2rem;
+    color: var(--color-span-body);
     margin-bottom: 20px;
     font-weight: bold;
 }
@@ -418,7 +413,7 @@ span {
 .botao-plano {
     display: inline-block;
     padding: 10px 20px;
-    background-color: #0077ff;
+    background-color: var(--color-span-body);
     color: white;
     border-radius: 8px;
     text-decoration: none;
@@ -431,7 +426,7 @@ span {
 }
 
 .destaque {
-    border: 2px solid #0077ff;
+    border: 1px solid var(--color-span-body);
 }
 
 /* Agentamentos */
@@ -442,12 +437,13 @@ span {
     text-align: center;
 }
 
-.agendamento h2 {
+.agendamento .agendamento-subtitle {
     font-size: 2.2rem;
     margin-bottom: 10px;
+    text-shadow: 0 1px 6px rgba(0, 0, 0, 0.09);
 }
 
-.agendamento-subtitulo {
+.agendamento-paragraph {
     font-size: 1rem;
     color: #666;
     margin-bottom: 30px;
@@ -462,17 +458,19 @@ span {
 
 .form-agendamento input,
 .form-agendamento select {
-    padding: 12px;
+    padding: 10px 12px;
     font-size: 1rem;
     border-radius: 8px;
-    border: 1px solid #ccc;
+    border: none;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.5);
+    outline: none;
     width: 100%;
 }
 
 .form-agendamento button {
     padding: 12px;
     font-size: 1rem;
-    background-color: #0077ff;
+    background-color: var(--color-span-body);
     color: white;
     border: none;
     border-radius: 8px;
@@ -489,7 +487,6 @@ span {
 
 .contato {
     padding: 60px 20px;
-    background-color: #f7f7f7;
     text-align: center;
 }
 
@@ -515,8 +512,10 @@ span {
 .form-contato textarea {
     padding: 12px;
     font-size: 1rem;
-    border: 1px solid #ccc;
-    border-radius: 8px;
+    border: none;
+    border-bottom: 1px solid var(--background-body);
+    /* border-radius: 8px; */
+    outline: none;
     width: 100%;
 }
 
